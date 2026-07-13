@@ -548,13 +548,109 @@ nav ul{
 
 
 
-.instructor{
+.instructor-section{
+
+    padding:80px 10%;
+    background:#fff;
+
+}
+
+.instructor-section h2{
+
+    text-align:center;
+    color:#1B5E20;
+    margin-bottom:40px;
+    font-size:2rem;
+
+}
+
+.instructor-card{
+
+    max-width:1000px;
+    margin:auto;
+
+    display:flex;
+    gap:40px;
+
+    align-items:center;
+
+    background:#f9f9f9;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.instructor-card img{
+
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #C99700;
+
+}
+
+.instructor-info{
+
+    flex:1;
+
+}
+
+.instructor-info h3{
+
+    color:#1B5E20;
+    margin-bottom:10px;
+
+}
+
+.title{
+
+    color:#777;
+    margin-bottom:20px;
+    font-weight:600;
+
+}
+
+.linkedin-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:#0077B5;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.linkedin-btn:hover{
+
+    background:#005983;
+
+}
+
+@media(max-width:768px){
+
+.instructor-card{
 
     flex-direction:column;
     text-align:center;
 
 }
-
-
 
 }
