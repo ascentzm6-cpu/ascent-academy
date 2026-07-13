@@ -1,0 +1,560 @@
+/* =====================================
+   ASCENT ZAMBIA - COURSE PAGE STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Segoe UI', Arial, sans-serif;
+    color:#222;
+    line-height:1.6;
+    background:#fff;
+
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+    background:white;
+    padding:15px 8%;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.logo img{
+
+    width:150px;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+
+nav ul a{
+
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+
+}
+
+
+nav ul a:hover{
+
+    color:#C99700;
+
+}
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.course-hero{
+
+    display:grid;
+    grid-template-columns:1.3fr .7fr;
+    gap:50px;
+    padding:80px 10%;
+    background:#f8f8f8;
+
+}
+
+
+
+.hero-left h1{
+
+    font-size:55px;
+    line-height:1.1;
+    margin:20px 0;
+
+}
+
+
+.hero-left p{
+
+    font-size:19px;
+    max-width:650px;
+
+}
+
+
+
+.course-tag{
+
+    background:#1B5E20;
+    color:white;
+    padding:7px 18px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+
+}
+
+
+
+
+.hero-stats{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin:35px 0;
+
+}
+
+
+
+.hero-stats div{
+
+    background:white;
+    padding:15px 20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.hero-stats i{
+
+    color:#C99700;
+    margin-right:8px;
+
+}
+
+
+
+
+.btn{
+
+    display:inline-block;
+    padding:15px 35px;
+    background:#C99700;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    background:#9b7500;
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   COURSE CARD
+===================================== */
+
+
+.course-card{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+.course-card img{
+
+    width:100%;
+    border-radius:15px;
+    margin-bottom:20px;
+
+}
+
+
+
+.course-card h3{
+
+    margin-bottom:20px;
+
+}
+
+
+.course-card ul{
+
+    list-style:none;
+
+}
+
+
+
+.course-card li{
+
+    margin:12px 0;
+
+}
+
+
+
+
+
+/* =====================================
+   GENERAL SECTIONS
+===================================== */
+
+
+section{
+
+    padding:80px 10%;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+    font-size:38px;
+    margin-bottom:45px;
+
+}
+
+
+
+
+
+/* =====================================
+   LEARNING GRID
+===================================== */
+
+
+.learn-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+
+}
+
+
+
+.learn-grid div{
+
+    padding:25px;
+    background:#f5f5f5;
+    border-radius:12px;
+    font-weight:600;
+
+}
+
+
+
+.learn-grid i{
+
+    color:#1B5E20;
+    margin-right:10px;
+
+}
+
+
+
+
+
+/* =====================================
+   GREY SECTIONS
+===================================== */
+
+
+.grey{
+
+    background:#f7f7f7;
+
+}
+
+
+
+
+
+/* =====================================
+   CURRICULUM
+===================================== */
+
+
+.module{
+
+    background:white;
+    margin:20px auto;
+    padding:25px 35px;
+    max-width:850px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.module h3{
+
+    color:#1B5E20;
+    margin-bottom:15px;
+
+}
+
+
+
+.module ul{
+
+    padding-left:25px;
+
+}
+
+
+
+
+
+/* =====================================
+   AUDIENCE
+===================================== */
+
+
+.audience{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+
+}
+
+
+
+.box{
+
+    background:#1B5E20;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* =====================================
+   INSTRUCTOR
+===================================== */
+
+
+.instructor{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+    max-width:900px;
+    margin:auto;
+
+}
+
+
+
+.instructor img{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+
+}
+
+
+
+.instructor h3{
+
+    color:#1B5E20;
+    font-size:30px;
+
+}
+
+
+
+
+
+/* =====================================
+   ENROLL SECTION
+===================================== */
+
+
+#register{
+
+    text-align:center;
+
+}
+
+
+
+#register h1{
+
+    font-size:55px;
+    color:#C99700;
+    margin:20px;
+
+}
+
+
+
+.small{
+
+    margin-top:25px;
+
+}
+
+
+
+.small a{
+
+    color:#1B5E20;
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+
+footer{
+
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:40px;
+
+}
+
+
+
+footer img{
+
+    width:130px;
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* =====================================
+   MOBILE DESIGN
+===================================== */
+
+
+@media(max-width:850px){
+
+
+nav{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+nav ul{
+
+    gap:15px;
+
+}
+
+
+
+.course-hero{
+
+    grid-template-columns:1fr;
+    text-align:center;
+
+}
+
+
+
+.hero-left h1{
+
+    font-size:38px;
+
+}
+
+
+
+.hero-stats{
+
+    justify-content:center;
+
+}
+
+
+
+.instructor{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+
+}
