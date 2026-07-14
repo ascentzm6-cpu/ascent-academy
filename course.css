@@ -1,7 +1,7 @@
 /* =====================================
-   ASCENT ZAMBIA - COURSE PAGE STYLE
+   ASCENT ZAMBIA ACADEMY
+   COURSE PAGE STYLES
 ===================================== */
-
 
 *{
     margin:0;
@@ -9,39 +9,33 @@
     box-sizing:border-box;
 }
 
-
-body{
-
-    font-family:'Segoe UI', Arial, sans-serif;
-    color:#222;
-    line-height:1.6;
-    background:#fff;
-
-}
-
-
 html{
     scroll-behavior:smooth;
 }
 
-
+body{
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:#fff;
+    color:#222;
+    line-height:1.7;
+}
 
 /* =====================================
    HEADER
 ===================================== */
 
-
 header{
 
-    background:white;
+    background:#fff;
     padding:15px 8%;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
     position:sticky;
     top:0;
     z-index:1000;
 
-}
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
 
+}
 
 nav{
 
@@ -51,14 +45,12 @@ nav{
 
 }
 
-
 .logo img{
 
-    width:150px;
+    width:160px;
+    display:block;
 
 }
-
-
 
 nav ul{
 
@@ -68,51 +60,56 @@ nav ul{
 
 }
 
+nav ul li{
 
-nav ul a{
+    list-style:none;
+
+}
+
+nav ul li a{
 
     text-decoration:none;
     color:#222;
     font-weight:600;
+    transition:.3s;
 
 }
 
-
-nav ul a:hover{
+nav ul li a:hover{
 
     color:#C99700;
 
 }
 
-
-
-
-
 /* =====================================
    HERO SECTION
 ===================================== */
-
 
 .course-hero{
 
     display:grid;
     grid-template-columns:1.3fr .7fr;
-    gap:50px;
-    padding:80px 10%;
+
+    gap:60px;
+
+    padding:90px 10%;
+
     background:#f8f8f8;
 
+    align-items:center;
+
 }
-
-
 
 .hero-left h1{
 
-    font-size:55px;
+    font-size:58px;
     line-height:1.1;
+
     margin:20px 0;
 
-}
+    color:#1B1B1B;
 
+}
 
 .hero-left p{
 
@@ -121,113 +118,123 @@ nav ul a:hover{
 
 }
 
-
-
 .course-tag{
 
+    display:inline-block;
+
     background:#1B5E20;
-    color:white;
-    padding:7px 18px;
-    border-radius:20px;
+
+    color:#fff;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
     font-size:13px;
+
     font-weight:bold;
 
+    letter-spacing:1px;
+
 }
-
-
-
 
 .hero-stats{
 
     display:flex;
+
     flex-wrap:wrap;
-    gap:20px;
+
+    gap:18px;
+
     margin:35px 0;
 
 }
 
-
-
 .hero-stats div{
 
-    background:white;
-    padding:15px 20px;
+    background:#fff;
+
+    padding:15px 22px;
+
     border-radius:10px;
+
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 
+    font-weight:600;
+
 }
-
-
 
 .hero-stats i{
 
     color:#C99700;
+
     margin-right:8px;
 
 }
 
-
-
-
 .btn{
 
     display:inline-block;
+
     padding:15px 35px;
+
     background:#C99700;
-    color:white;
+
+    color:#fff;
+
     text-decoration:none;
-    border-radius:30px;
+
+    border-radius:35px;
+
     font-weight:bold;
+
     transition:.3s;
 
 }
 
-
 .btn:hover{
 
     background:#9b7500;
+
     transform:translateY(-3px);
 
 }
-
-
-
-
-
-
 
 /* =====================================
    COURSE CARD
 ===================================== */
 
-
 .course-card{
 
-    background:white;
+    background:#fff;
+
     padding:25px;
+
     border-radius:20px;
+
     box-shadow:0 15px 35px rgba(0,0,0,.12);
 
 }
 
-
-
 .course-card img{
 
     width:100%;
+
     border-radius:15px;
+
     margin-bottom:20px;
 
+    display:block;
+
 }
-
-
 
 .course-card h3{
 
     margin-bottom:20px;
 
-}
+    color:#1B5E20;
 
+}
 
 .course-card ul{
 
@@ -235,22 +242,17 @@ nav ul a:hover{
 
 }
 
-
-
 .course-card li{
 
-    margin:12px 0;
+    margin:14px 0;
+
+    font-weight:500;
 
 }
-
-
-
-
 
 /* =====================================
    GENERAL SECTIONS
 ===================================== */
-
 
 section{
 
@@ -258,98 +260,100 @@ section{
 
 }
 
-
-
 section h2{
 
     text-align:center;
-    font-size:38px;
+
+    font-size:40px;
+
+    color:#1B5E20;
+
     margin-bottom:45px;
 
 }
-
-
-
-
-
 /* =====================================
    LEARNING GRID
 ===================================== */
 
-
 .learn-grid{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:20px;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
 
 }
-
-
 
 .learn-grid div{
 
+    background:#f7f7f7;
+
     padding:25px;
-    background:#f5f5f5;
-    border-radius:12px;
+
+    border-radius:15px;
+
     font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
 
 }
 
+.learn-grid div:hover{
 
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
 
 .learn-grid i{
 
     color:#1B5E20;
+
     margin-right:10px;
 
 }
 
-
-
-
-
 /* =====================================
-   GREY SECTIONS
+   GREY SECTION
 ===================================== */
-
 
 .grey{
 
-    background:#f7f7f7;
+    background:#f8f8f8;
 
 }
-
-
-
-
 
 /* =====================================
    CURRICULUM
 ===================================== */
 
-
 .module{
 
-    background:white;
-    margin:20px auto;
-    padding:25px 35px;
-    max-width:850px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    background:#fff;
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    padding:30px 35px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
 }
-
-
 
 .module h3{
 
     color:#1B5E20;
+
     margin-bottom:15px;
 
 }
-
-
 
 .module ul{
 
@@ -357,243 +361,115 @@ section h2{
 
 }
 
+.module li{
 
+    margin:10px 0;
 
-
+}
 
 /* =====================================
    AUDIENCE
 ===================================== */
 
-
 .audience{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
 
 }
-
-
 
 .box{
 
     background:#1B5E20;
-    color:white;
-    padding:25px;
+
+    color:#fff;
+
+    padding:30px;
+
     border-radius:15px;
+
     text-align:center;
+
     font-weight:bold;
 
+    transition:.3s;
+
 }
 
+.box:hover{
 
+    transform:translateY(-5px);
 
+    background:#14491a;
 
+}
 
 /* =====================================
-   INSTRUCTOR
+   INSTRUCTOR SECTION
 ===================================== */
-
-
-.instructor{
-
-    display:flex;
-    align-items:center;
-    gap:40px;
-    max-width:900px;
-    margin:auto;
-
-}
-
-
-
-.instructor img{
-
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-
-}
-
-
-
-.instructor h3{
-
-    color:#1B5E20;
-    font-size:30px;
-
-}
-
-
-
-
-
-/* =====================================
-   ENROLL SECTION
-===================================== */
-
-
-#register{
-
-    text-align:center;
-
-}
-
-
-
-#register h1{
-
-    font-size:55px;
-    color:#C99700;
-    margin:20px;
-
-}
-
-
-
-.small{
-
-    margin-top:25px;
-
-}
-
-
-
-.small a{
-
-    color:#1B5E20;
-    font-weight:bold;
-
-}
-
-
-
-
-
-/* =====================================
-   FOOTER
-===================================== */
-
-
-footer{
-
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:40px;
-
-}
-
-
-
-footer img{
-
-    width:130px;
-    margin-bottom:20px;
-
-}
-
-
-
-
-
-/* =====================================
-   MOBILE DESIGN
-===================================== */
-
-
-@media(max-width:850px){
-
-
-nav{
-
-    flex-direction:column;
-    gap:20px;
-
-}
-
-
-nav ul{
-
-    gap:15px;
-
-}
-
-
-
-.course-hero{
-
-    grid-template-columns:1fr;
-    text-align:center;
-
-}
-
-
-
-.hero-left h1{
-
-    font-size:38px;
-
-}
-
-
-
-.hero-stats{
-
-    justify-content:center;
-
-}
-
-
 
 .instructor-section{
 
-    padding:80px 10%;
     background:#fff;
+
+    padding:90px 10%;
 
 }
 
 .instructor-section h2{
 
     text-align:center;
+
     color:#1B5E20;
-    margin-bottom:40px;
-    font-size:2rem;
+
+    font-size:2.4rem;
+
+    margin-bottom:55px;
 
 }
 
 .instructor-card{
 
-    max-width:1000px;
+    max-width:1100px;
+
     margin:auto;
 
     display:flex;
-    gap:40px;
 
     align-items:center;
 
+    gap:50px;
+
     background:#f9f9f9;
 
-    padding:40px;
+    padding:45px;
 
-    border-radius:20px;
+    border-radius:25px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 }
 
 .instructor-card img{
 
-    width:220px;
-    height:220px;
+    width:260px;
+
+    height:260px;
 
     border-radius:50%;
 
     object-fit:cover;
 
+    object-position:center top;
+
     border:6px solid #C99700;
+
+    flex-shrink:0;
+
+    display:block;
 
 }
 
@@ -605,16 +481,29 @@ nav ul{
 
 .instructor-info h3{
 
+    font-size:2rem;
+
     color:#1B5E20;
+
     margin-bottom:10px;
 
 }
 
 .title{
 
-    color:#777;
-    margin-bottom:20px;
+    color:#666;
+
     font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.instructor-info p{
+
+    font-size:17px;
+
+    line-height:1.8;
 
 }
 
@@ -622,15 +511,17 @@ nav ul{
 
     display:inline-block;
 
-    margin-top:20px;
+    margin-top:25px;
 
-    padding:12px 25px;
+    padding:12px 28px;
 
     background:#0077B5;
 
-    color:white;
+    color:#fff;
 
     text-decoration:none;
+
+    font-weight:bold;
 
     border-radius:30px;
 
@@ -642,14 +533,290 @@ nav ul{
 
     background:#005983;
 
+    transform:translateY(-2px);
+
+}
+/* =====================================
+   REGISTER SECTION
+===================================== */
+
+#register{
+
+    text-align:center;
+
+    background:#f8f8f8;
+
 }
 
-@media(max-width:768px){
+#register h2{
+
+    color:#1B5E20;
+
+}
+
+#register h1{
+
+    font-size:60px;
+
+    color:#C99700;
+
+    margin:20px 0;
+
+}
+
+#register p{
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    font-size:18px;
+
+}
+
+.small{
+
+    margin-top:30px;
+
+}
+
+.small a{
+
+    color:#1B5E20;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+}
+
+.small a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    background:#111;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+footer img{
+
+    width:140px;
+
+    margin-bottom:20px;
+
+}
+
+footer h3{
+
+    margin-bottom:10px;
+
+    color:#fff;
+
+}
+
+footer p{
+
+    color:#ccc;
+
+    margin:8px 0;
+
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width:900px){
+
+header{
+
+    padding:15px 5%;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.course-hero{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+    padding:70px 8%;
+
+}
+
+.hero-left h1{
+
+    font-size:40px;
+
+}
+
+.hero-left p{
+
+    margin:auto;
+
+}
+
+.hero-stats{
+
+    justify-content:center;
+
+}
+
+.hero-right{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.course-card{
+
+    max-width:450px;
+
+}
 
 .instructor-card{
 
     flex-direction:column;
+
     text-align:center;
+
+    padding:35px;
+
+}
+
+.instructor-card img{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+.instructor-info{
+
+    text-align:center;
+
+}
+
+.learn-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.audience{
+
+    grid-template-columns:1fr;
+
+}
+
+.module{
+
+    padding:25px;
+
+}
+
+section{
+
+    padding:70px 8%;
+
+}
+
+}
+
+@media (max-width:600px){
+
+.logo img{
+
+    width:130px;
+
+}
+
+.hero-left h1{
+
+    font-size:32px;
+
+}
+
+section h2{
+
+    font-size:30px;
+
+}
+
+#register h1{
+
+    font-size:45px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.linkedin-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.course-card{
+
+    padding:20px;
+
+}
+
+.instructor-card{
+
+    padding:25px;
+
+}
+
+.instructor-card img{
+
+    width:180px;
+
+    height:180px;
 
 }
 
